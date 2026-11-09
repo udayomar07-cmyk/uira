@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Udoy Omar Bhasha</title>
+<meta name="description" content="Udoy Omar Bhasha - Textile Engineering student at BUTEX">
+<style>
+  :root {
+    --bg: #fafaf7;
+    --card: #ffffff;
+    --text: #1d2433;
+    --muted: #5b6475;
+    --accent: #1f6feb;
+    --accent-soft: #e8f0fe;
+    --border: #e4e6eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1420;
+      --card: #171e2e;
+      --text: #e8ebf2;
+      --muted: #9aa3b5;
+      --accent: #6ea8fe;
+      --accent-soft: #1c2a47;
+      --border: #26304a;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, "Noto Sans Bengali", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  nav {
+    max-width: 900px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 20px;
+  }
+  .logo { font-weight: 700; font-size: 1.1rem; color: var(--text); }
+  nav ul { list-style: none; display: flex; gap: 20px; }
+  nav ul a { color: var(--muted); font-size: 0.95rem; }
+  nav ul a:hover { color: var(--accent); text-decoration: none; }
+
+  main { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 64px 0 24px; }
+  h2 { font-size: 1.6rem; margin-bottom: 20px; }
+
+  .hero { padding: 80px 0 40px; }
+  .hero .tag {
+    display: inline-block;
+    background: var(--accent-soft); color: var(--accent);
+    padding: 4px 14px; border-radius: 999px;
+    font-size: 0.85rem; margin-bottom: 18px;
+  }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.2; margin-bottom: 16px; }
+  .hero p { color: var(--muted); font-size: 1.1rem; max-width: 600px; margin-bottom: 28px; }
+  .btn {
+    display: inline-block;
+    background: var(--accent); color: #fff;
+    padding: 11px 24px; border-radius: 8px; font-weight: 600;
+  }
+  .btn:hover { text-decoration: none; opacity: 0.9; }
+  .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); margin-left: 10px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .card p { color: var(--muted); font-size: 0.95rem; }
+
+  .facts { list-style: none; }
+  .facts li { padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .facts li:last-child { border-bottom: none; }
+  .facts strong { display: inline-block; min-width: 130px; }
+
+  footer {
+    max-width: 900px; margin: 60px auto 0;
+    padding: 24px 20px; text-align: center;
+    color: var(--muted); font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 560px) {
+    nav ul { gap: 12px; }
+    .btn.ghost { margin-left: 0; margin-top: 10px; }
+    .facts strong { display: block; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="#home">Udoy Omar Bhasha</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <span class="tag">Textile Engineering Student</span>
+    <h1>Hi, I'm Udoy Omar Bhasha.</h1>
+    <p>I'm a first-year student at BUTEX, studying Textile Machinery Design and Maintenance. I enjoy math, physics and nature, and I'm working toward an MS in the USA.</p>
+    <a class="btn" href="#about">About me</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <ul class="facts">
+        <li><strong>University</strong> BUTEX, Dept. of Textile Machinery Design and Maintenance</li>
+        <li><strong>College</strong> Notre Dame College (HSC GPA 5.00)</li>
+        <li><strong>School</strong> NKM High School and Homes (SSC GPA 5.00)</li>
+        <li><strong>Languages</strong> Bangla, English</li>
+        <li><strong>Goal</strong> MS in the United States</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="activities">
+    <h2>Activities &amp; Achievements</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Physics Olympiad</h3>
+        <p>Participated in the national round.</p>
+      </div>
+      <div class="card">
+        <h3>Math Olympiad</h3>
+        <p>Achievement in the regional math olympiad.</p>
+      </div>
+      <div class="card">
+        <h3>NDC Math Club</h3>
+        <p>Worked in the PR department; volunteered at the 4th NDC National Math Festival.</p>
+      </div>
+      <div class="card">
+        <h3>NDC Nature Study Club</h3>
+        <p>Member; took part in an international seminar on South Asian climate change.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Want to talk? Send me an email:</p>
+      <p style="margin-top:10px;"><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Udoy Omar Bhasha. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
